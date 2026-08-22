@@ -721,14 +721,18 @@
 
     .founder-photo {
       position: absolute;
-      inset: 0;
-      width: 100%;
-      height: 100%;
+      width: min(92%, 470px);
+      aspect-ratio: 1;
+      height: auto;
+      left: 50%;
+      top: 47%;
+      transform: translate(-50%, -50%);
       object-fit: cover;
-      object-position: center 32%;
-      filter: grayscale(1) contrast(1.12) brightness(.82);
-      opacity: .88;
+      border-radius: 50%;
+      filter: grayscale(1) contrast(1.12) brightness(.80);
+      opacity: .92;
       mix-blend-mode: screen;
+      box-shadow: 0 0 80px rgba(37,183,255,.16);
     }
 
     .founder-info {
