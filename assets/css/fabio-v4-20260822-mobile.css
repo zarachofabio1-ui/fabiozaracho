@@ -156,6 +156,13 @@ h1 em, h2 em { color: var(--blue); font-style: normal; }
 .hero h1 { max-width: 790px; }
 .hero-lead { max-width: 690px; margin-bottom: 31px; color: #aeb9c8; font-size: clamp(1.08rem,1.5vw,1.28rem); line-height: 1.75; }
 .hero-actions { display: flex; flex-wrap: wrap; gap: 13px; }
+.hero-direct { display: inline-flex; align-items: center; gap: 11px; max-width: 420px; margin-top: 18px; padding: 11px 14px; border: 1px solid rgba(74,180,255,.22); border-radius: 15px; color: #edf7ff; background: linear-gradient(100deg,rgba(24,126,255,.10),rgba(255,255,255,.025)); transition: border-color .2s ease, transform .2s ease; }
+.hero-direct:hover { border-color: rgba(92,193,255,.48); transform: translateY(-2px); }
+.hero-direct-dot { width: 9px; height: 9px; flex: 0 0 9px; border-radius: 50%; background: #36e49a; box-shadow: 0 0 0 5px rgba(54,228,154,.10),0 0 18px rgba(54,228,154,.5); }
+.hero-direct span:not(.hero-direct-dot) { display: grid; gap: 2px; min-width: 0; }
+.hero-direct strong { font-size: .78rem; }
+.hero-direct small { color: #8293a7; font-size: .68rem; }
+.hero-direct b { margin-left: auto; color: #5bc7ff; font-size: 1rem; }
 .hero-proof { display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); gap: 18px; max-width: 660px; margin-top: 42px; padding-top: 25px; border-top: 1px solid var(--line); }
 .hero-proof div { min-width: 0; }
 .hero-proof strong, .hero-proof span { display: block; }
@@ -577,6 +584,7 @@ select { color-scheme: dark; }
   .hero-lead { margin: 0 0 23px; font-size: .98rem; line-height: 1.65; text-align: left; }
   .hero-actions { display: grid; grid-template-columns: 1fr; gap: 10px; }
   .hero-actions .btn { width: 100%; min-height: 50px; }
+  .hero-direct { display: flex; width: 100%; max-width: none; margin-top: 12px; }
   .hero-proof { grid-template-columns: repeat(3,minmax(0,1fr)); gap: 8px; margin-top: 25px; padding-top: 18px; text-align: left; }
   .hero-proof div:last-child { grid-column: auto; }
   .hero-proof strong { font-size: .78rem; }
@@ -621,4 +629,3 @@ select { color-scheme: dark; }
   .hero-proof div:last-child { grid-column: auto; }
   .hero-visual { width: min(240px, 70vw); }
 }
-
