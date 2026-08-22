@@ -782,21 +782,22 @@
       <div class="container">
         <div class="package">
           <div class="price-card">
-            <p class="eyebrow">Oferta inicial</p>
+            <p class="eyebrow">Oferta Emprendedor</p>
             <h2>Paquete Web Express</h2>
             <p class="sub">Una página clara y profesional para presentar tu negocio y recibir consultas.</p>
             <div class="price">Gs. 350.000</div>
             <p class="note">Ideal para empezar: landing page, adaptación a celular y contacto directo por WhatsApp.</p>
             <br>
-            <button class="btn btn-gold" onclick="irAlFormulario()">Solicitar propuesta</button>
+            <button class="btn btn-gold" onclick="enviarPaqueteWhatsApp('Oferta Emprendedor', 'Gs. 350.000')">Elegir Oferta Emprendedor</button>
           </div>
 
           <div class="included-card">
-            <p class="eyebrow">Segunda oferta</p>
+            <p class="eyebrow">Oferta Empresarial</p>
             <h2>Paquete Web Profesional</h2>
             <div class="price">Gs. 700.000</div>
             <p class="note">Una solución más completa para negocios que necesitan mayor presencia y funciones.</p>
-            <h3 style="margin-top:22px">Incluye</h3>
+            <button class="btn btn-gold" style="margin-top:20px" onclick="enviarPaqueteWhatsApp('Oferta Empresarial', 'Gs. 700.000')">Elegir Oferta Empresarial</button>
+            <h3 style="margin-top:26px">Incluye</h3>
             <div class="included-list">
               <div>✅ <span><b>Diseño premium:</b> estilo profesional adaptado al rubro.</span></div>
               <div>✅ <span><b>Celular:</b> estructura 100% responsive.</span></div>
@@ -980,6 +981,19 @@
 ${mensaje}
 
 ✅ Solicitud enviada desde la web de Fabio Zaracho.`;
+    }
+
+    function enviarPaqueteWhatsApp(paquete, precio) {
+      const texto = `Hola Fabio, quiero consultar por la ${paquete} de ${precio}.`;
+      const url = `https://wa.me/${NUMERO_WHATSAPP}?text=${encodeURIComponent(texto)}`;
+      if (window.ttq && typeof window.ttq.track === "function") {
+        window.ttq.track("Lead", {
+          content_name: paquete,
+          content_type: "service",
+          value: precio
+        });
+      }
+      window.open(url, "_blank");
     }
 
     function enviarWhatsApp() {
