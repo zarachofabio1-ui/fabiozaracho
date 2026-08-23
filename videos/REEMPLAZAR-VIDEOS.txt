@@ -1,0 +1,29 @@
+VIDEOS DEL FUNNEL — REEMPLAZÁ SIN CAMBIAR LOS NOMBRES
+
+1) interludio-fuga.mp4
+   Duración ideal: 3 a 5 segundos.
+   Tipo: visual cinematográfico sin diálogo. Mensajes, nodos, señales, pantallas o conexiones que se dispersan.
+   El copy aparece encima desde la web, no hace falta escribir texto dentro del video.
+
+2) interludio-sistema.mp4
+   Duración ideal: 3 a 5 segundos.
+   Tipo: visual futurista de conexiones que se ordenan, rutas que se unen, interfaz o red digital activándose.
+   El copy aparece encima desde la web.
+
+3) vsl.mp4
+   Duración ideal: 45 a 75 segundos.
+   Tu video principal de explicación/venta.
+   Recomendado: vos hablando a cámara + cortes B-roll de Instagram, WhatsApp, web y automatización.
+
+4) cierre.mp4
+   Duración ideal: 15 a 30 segundos.
+   Video final mirando a cámara. Debe sentirse personal, corto y directo.
+
+FORMATO RECOMENDADO
+- MP4 H.264
+- 1920x1080 o 1280x720
+- Audio AAC
+- 24 o 30 fps
+- Evitá archivos gigantes: comprimir antes de publicar.
+
+cinematic-bg.mp4 es el fondo general y puede quedarse como está.
