@@ -1,0 +1,2 @@
+# If web.fabiozaracho.com is attached as a domain alias to this Netlify site, serve the dedicated web-services experience from /web.
+https://web.fabiozaracho.com/*  /web/:splat  200!
